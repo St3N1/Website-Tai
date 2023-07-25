@@ -35,7 +35,7 @@ li {
 .navigatie-lijst {
   margin: 0;
   padding: 20px 50px 20px 50px;
-  background-color: hsl(195, 50%, 80%, 0.75);
+  background-color: hsla(50, 100%, 70%, 0.75);
   display: flex;
   justify-content: space-evenly;
 }
@@ -105,8 +105,7 @@ footer {
 .samenwerking-child {
   display: grid;
   width: max-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 50px auto 50px auto;
   grid-template-rows: repeat(2, 200px);
   grid-template-columns: repeat(3, 200px);
   align-items: center;
@@ -133,16 +132,21 @@ footer {
 }
 
 .link:hover {
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  /* -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  /* color: hsl(0, 0%, 80%, 1); */
+  -webkit-text-stroke-color: black; */
+  /* color: hsl(0, 0%, 50%, 1); */
+  color: hsl(0, 100%, 70%);
   transition: 0.2s;
 }
 
 h3 {
   margin: 0px 0px 20px 0px;
   font-weight: bold;
+}
+
+.trainingsdag {
+  margin: 0;
 }
 
 .contact-child .links {
@@ -160,8 +164,23 @@ H1 {
   text-decoration: none;
   color: black;
 }
+
 .naam:hover {
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+}
+
+.trainingsuren-child {
+  border: solid 1px black;
+  padding: 20px;
+  width: max-content;
+  margin: 20px auto 20px auto;
+  display: grid;
+  gap: 20px;
+  align-items: center;
+}
+
+.trainingsuren-child > div > ul {
+  margin: 0;
 }
