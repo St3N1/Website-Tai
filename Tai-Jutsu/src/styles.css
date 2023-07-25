@@ -3,6 +3,10 @@ html {
   min-height: 100%;
 }
 
+li {
+  list-style: none;
+}
+
 /* Header */
 .fixed {
   position: fixed;
@@ -12,16 +16,34 @@ html {
 }
 
 .notfixed {
-  position: static;
+  position: fixed;
+  width: 100%;
   transition: 0.5s;
   top: -80px;
 }
 
 .header-child {
+  background-color: hsl(0, 0%, 90%, 1);
+  padding: 20px 50px 20px 50px;
+}
+
+.header-rij {
   display: flex;
   justify-content: space-between;
-  background-color: lightblue;
+}
+
+.navigatie-lijst {
+  margin: 0;
   padding: 20px 50px 20px 50px;
+  background-color: hsl(195, 50%, 80%, 0.75);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pagina-link {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* Body */
@@ -38,7 +60,13 @@ body {
 .body-parrent {
 }
 
-.body-child > *{
+.router {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.body-child > img {
   width: 100%;
 }
 
@@ -48,15 +76,15 @@ footer {
 
 .footer-child {
   padding: 60px 0px 60px 0px;
-  background-color: grey;
+  background-color: hsl(0, 0%, 90%, 1);
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .copyright {
   margin: 0;
   font-size: 12px;
-  background-color: yellow;
+  background-color: hsl(0, 0%, 80%, 1);
   text-align: center;
 }
 
@@ -74,7 +102,24 @@ footer {
   transition: 0.2s;
 }
 
-.media-child img:hover {
+.samenwerking-child {
+  display: grid;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-rows: repeat(2, 200px);
+  grid-template-columns: repeat(3, 200px);
+  align-items: center;
+  text-align: center;
+}
+
+.samenwerking-child img {
+  height: 150px;
+  transition: 0.2s;
+}
+
+.media-child img:hover,
+.samenwerking-child img:hover {
   transform: scale(1.2);
   transition: 0.2s;
 }
@@ -88,11 +133,14 @@ footer {
 }
 
 .link:hover {
-  color: lightblue;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  /* color: hsl(0, 0%, 80%, 1); */
   transition: 0.2s;
 }
 
-.contact-child h3 {
+h3 {
   margin: 0px 0px 20px 0px;
   font-weight: bold;
 }
@@ -106,4 +154,14 @@ footer {
 H1 {
   margin: 0;
   height: 40px;
+}
+
+.naam {
+  text-decoration: none;
+  color: black;
+}
+.naam:hover {
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
