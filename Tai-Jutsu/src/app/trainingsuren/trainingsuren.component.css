@@ -1,0 +1,18 @@
+.trainingsdag {
+  margin: 0;
+}
+
+.trainingsuren-child {
+  background-color: white;
+  border: solid 1px black;
+  padding: 20px;
+  width: max-content;
+  margin: 20px auto 20px auto;
+  display: grid;
+  gap: 20px;
+  align-items: center;
+}
+
+.trainingsuren-child > div > ul {
+  margin: 0;
+}

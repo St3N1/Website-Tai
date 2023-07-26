@@ -1,0 +1,33 @@
+.navigatie-lijst {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin: 0;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  padding: 20px;
+  background-color: hsl(0, 0%, 60%, 0.8);
+  /* background-color: hsla(50, 100%, 70%, 0.75); */
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 100;
+}
+
+.pagina-link {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+  width: max-content;
+}
+
+.link:hover {
+  color: hsl(0, 0%, 90%);
+  transition: 0.2s;
+}

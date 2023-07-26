@@ -1,0 +1,13 @@
+.fixed {
+  position: fixed;
+  width: 100%;
+  transition: 0.5s;
+  top: 0px;
+}
+
+.notfixed {
+  position: fixed;
+  width: 100%;
+  transition: 0.5s;
+  top: -94px;
+}

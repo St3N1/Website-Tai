@@ -1,0 +1,27 @@
+.link {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+  width: max-content;
+}
+
+.link:hover {
+  /* -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; */
+  color: hsl(0, 0%, 50%, 1);
+  /* color: hsl(0, 100%, 70%); */
+  transition: 0.2s;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
+
+h3 {
+  margin: 0px 0px 20px 0px;
+  font-weight: bold;
+}

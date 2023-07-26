@@ -1,3 +1,27 @@
 .samenwerking-child > div > p {
-    font-weight: bold;
+  margin: 0;
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.samenwerking-child {
+  display: grid;
+  width: max-content;
+  margin: 0px auto 0px auto;
+  gap: 50px;
+  grid-template-rows: repeat(2, 250px);
+  grid-template-columns: repeat(3, 250px);
+  align-items: center;
+  text-align: center;
+}
+
+.samenwerking-child img {
+  margin: 0;
+  height: 150px;
+  transition: 0.2s;
+}
+
+.samenwerking-child img:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
 }

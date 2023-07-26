@@ -13,7 +13,7 @@ export class AppComponent {
   @HostListener('window:scroll', ['$event']) onScroll() {
     let scroll = window.scrollY;
 
-    if (scroll > 300) this.headerfixed = false;
+    if (scroll > 200) this.headerfixed = false;
     if (this.prevScroll > scroll) this.headerfixed = true;
 
     this.prevScroll = scroll;

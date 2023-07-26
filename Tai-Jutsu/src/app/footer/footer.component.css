@@ -1,0 +1,19 @@
+.footer-child {
+  padding: 60px 0px 60px 0px;
+  background-color: hsl(0, 0%, 90%, 1);
+  /* background-color: hsl(0, 100%, 50%, .8); */
+  
+  display: flex;
+  justify-content: space-evenly;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.copyright {
+  margin: 0;
+  padding: 2px;
+  text-align: center;
+  font-size: 12px;
+  background-color: hsl(0, 0%, 60%, 1);
+}
