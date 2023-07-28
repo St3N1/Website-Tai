@@ -50,21 +50,21 @@ li {
   border-bottom: solid 2px hsl(0, 0%, 60%, 1);
 }
 
-.jp div h2 {
+.jp div h2, .peter div h2 {
   margin-bottom: 40px;
   padding-bottom: 10px;
   width: max-content;
   box-shadow: inset 0 -2px hsla(0, 100%, 50%, 0.75);
 }
 
-.jp div div {
+.jp div div, .peter div div {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 90%;
 }
 
-.jp img {
+.jp img, .peter img {
   width: 50%;
 }
 
@@ -80,20 +80,8 @@ li {
 
 .peter div h2 {
   margin-left: 10%;
-  margin-bottom: 40px;
-  padding-bottom: 10px;
-  width: max-content;
-  box-shadow: inset 0 -2px hsla(0, 100%, 50%, 0.75);
 }
 
 .peter div div {
   margin-left: 10%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 90%;
-}
-
-.peter img {
-  width: 50%;
 }

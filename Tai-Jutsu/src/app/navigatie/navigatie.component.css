@@ -2,32 +2,36 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   margin: 0;
-  margin-left: 15%;
-  margin-right: 15%;
 
   padding: 20px;
   background-color: hsl(0, 0%, 60%, 0.8);
-  /* background-color: hsla(50, 100%, 70%, 0.75); */
+
   display: flex;
   justify-content: space-evenly;
+}
+
+a {
   position: relative;
-  z-index: 100;
-}
-
-.pagina-link {
-  font-size: 20px;
   font-weight: bold;
-  text-decoration: none;
-}
-
-.link {
+  font-size: 20px;
   text-decoration: none;
   color: black;
-  transition: 0.2s;
-  width: max-content;
+  padding: 0 10px;
 }
 
-.link:hover {
-  color: hsl(0, 0%, 90%);
-  transition: 0.2s;
+a:after {
+  content: "";
+  position: absolute;
+  background-color: hsla(0, 100%, 50%, 0.75);
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -5px;
+  transform: scale(0, 1);
+  transition: transform 0.3s ease;
+}
+
+a:hover:after {
+    transform: scale(1, 1);
+
 }

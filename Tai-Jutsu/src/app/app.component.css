@@ -11,3 +11,11 @@
   transition: 0.5s;
   top: -94px;
 }
+
+.header-parrent {
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 5px #444444;
+}
