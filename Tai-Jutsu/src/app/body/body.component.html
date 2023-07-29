@@ -1,5 +1,26 @@
 <div class="body-child">
-  <img src="assets/images/tai-zaal.jpg" alt="Tai-Jutsu" loading="lazy" />
+  <div class="home-text">
+    <img [src]="img" alt="Tai-Jutsu" loading="lazy" />
+    <div class="img-text" *ngIf="router.url === '/home'">
+      <h1>Bij "Verdedigingsschool JP" beleef je sport</h1>
+      <div>
+        <div class="img-params">
+          <p>Op jouw manier en jouw tempo</p>
+          <p>Je leert je er verdedigen en werkt aan je conditie</p>
+          <p>Alle leeftijden zijn welkom</p>
+        </div>
+        <div>
+          <button>
+            <a
+              href="https://www.mijnassist.be/NL/bd9a9d8a-1396-4e3b-a93b-dc808b0be3e7/waitinglist/subscribe"
+              >Schrijf je hier in!
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="router">
     <router-outlet></router-outlet>
   </div>

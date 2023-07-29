@@ -44,11 +44,26 @@ import { HomeComponent } from './home/home.component';
       [
         { path: '', redirectTo: '/home', pathMatch: 'full' },
         { path: 'home', component: HomeComponent },
-        { path: 'samenwerking', component: SamenwerkingComponent },
-        { path: 'nieuws', component: NieuwsComponent },
-        { path: 'trainingsuren', component: TrainingsurenComponent },
-        { path: 'documenten', component: DocumentenComponent },
-        { path: 'dojo', component: DojoComponent },
+        {
+          path: 'nieuws',
+          component: NieuwsComponent,
+        },
+        {
+          path: 'trainingsuren',
+          component: TrainingsurenComponent,
+        },
+        {
+          path: 'dojo',
+          component: DojoComponent,
+        },
+        {
+          path: 'documenten',
+          component: DocumentenComponent,
+        },
+        {
+          path: 'samenwerking',
+          component: SamenwerkingComponent,
+        },
       ],
       { useHash: true }
     ),
