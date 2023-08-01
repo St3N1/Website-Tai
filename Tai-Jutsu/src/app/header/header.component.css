@@ -1,8 +1,15 @@
 .header-child {
   background-color: hsl(0, 0%, 90%, 0.8);
-  padding: 20px;
+  height: 90px;
+  /* padding: 20px; */
   display: flex;
   justify-content: space-between;
+}
+
+.media-parrent {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
 }
 
 h1 {
@@ -11,11 +18,9 @@ h1 {
 }
 
 img {
-  height: 80px;
-  margin-top: -15px;
-  margin-bottom: -15px;
+  height: 70px;
   transition: 0.2s;
-  
+  margin: 10px 10px 10px 15px;
 }
 
 img:hover {

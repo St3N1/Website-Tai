@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.leer-je-zelfverdediging {
+  display: flex;
+  gap: 40px;
+}
+
+.leer-je-zelfverdediging img {
+  height: 600px;
+}
+
+.fotolijst {
+  display: grid;
+  grid-template-columns: repeat(3, 125px);
+  gap: 10px;
+
+}
+
+.fotolijst img {
+  height: 125px;
+  width: 125px;
+}
+
+.zelfverdedigin-links {
+  /* width: 50%; */
+  text-align: right;
+}
+
+.zelfverdedigin-rechts {
+  /* width: 50%; */
+  text-align: left;
+}
+
+.zelfverdedigin-rechts {
+}
+
+.lijst {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lijst li {
+    font-weight: bold;
+}
